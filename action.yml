@@ -2,9 +2,9 @@ name: 'Issue Keyworder'
 description: 'Provide suggestions based on keywords in issues'
 author: 'RyanCavanaugh'
 inputs:
-  _unused:              # change this
-    description: 'Not sure how to make this a zero-input thing'
-    default: 'Be Nice'
+  token:
+    description: 'Auth token for doing stuff'
+    default: 'UNSET'
 runs:
   using: 'node12'
   main: 'lib/main.js'
