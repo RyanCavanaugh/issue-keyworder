@@ -1,10 +1,10 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Issue Keyworder'
+description: 'Provide suggestions based on keywords in issues'
+author: 'RyanCavanaugh'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  token:
+    description: 'Auth token for doing stuff'
+    default: 'UNSET'
 runs:
   using: 'node12'
   main: 'lib/main.js'
