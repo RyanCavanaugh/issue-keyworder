@@ -9,11 +9,11 @@ async function run() {
     }
     const gh = new github.GitHub(token);
 
-    const issue = await gh.issues.get(github.context.issue);
+    const issue = await gh.issues.get({issue_number: github.context.issue.number, owner: github.context.issue.owner, repo: github.context.issue.repo});
     if (issue.data.body.indexOf("fish") >= 0) {
       await gh.issues.createComment({
         body: "You said the magic word",
-        ...github.context.issue
+        issue_number: github.context.issue.number, owner: github.context.issue.owner, repo: github.context.issue.repo
       });
     }
   } catch (error) {
