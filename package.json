@@ -23,6 +23,8 @@
   "devDependencies": {
     "@actions/core": "^1.2.0",
     "@actions/github": "^1.1.0",
+    "@octokit/graphql": "^2.0.1",
+    "@octokit/types": "^1.1.0",
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.4",
     "jest": "^24.8.0",

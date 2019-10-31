@@ -3,7 +3,10 @@ description: 'Provide suggestions based on keywords in issues'
 author: 'RyanCavanaugh'
 inputs:
   token:
-    description: 'Auth token for doing stuff'
+    description: 'Auth token for repository admin access'
+    default: 'UNSET'
+  bot_token:
+    description: 'Auth token for posting comments'
     default: 'UNSET'
 runs:
   using: 'node12'
