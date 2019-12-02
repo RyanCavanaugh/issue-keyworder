@@ -19,9 +19,11 @@
   ],
   "author": "YourNameOrOrganization",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@actions/core": "^1.2.0",
+    "@octokit/request": "^5.3.1"
+  },
+  "devDependencies": {
     "@actions/github": "^1.1.0",
     "@octokit/graphql": "^2.0.1",
     "@octokit/types": "^1.1.0",
