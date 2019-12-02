@@ -1,3 +1,4 @@
+/*
 import { Issue } from "./main";
 
 type Response = {
@@ -27,3 +28,5 @@ function add(rgx: RegExp, s: string) {
         }
     })
 }
+*/
+export { };

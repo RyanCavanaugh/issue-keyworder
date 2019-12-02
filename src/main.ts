@@ -1,9 +1,9 @@
 import * as core from '@actions/core';
 import * as github from '@actions/github';
-import { IssuesGetResponse } from '@octokit/rest';
-import { Responses } from './responses';
+// import { IssuesGetResponse } from '@octokit/rest';
+// import { Responses } from './responses';
 
-export type Issue = Pick<IssuesGetResponse, "body" | "user">;
+// export type Issue = Pick<IssuesGetResponse, "body" | "user">;
 
 async function run() {
     try {
@@ -33,6 +33,7 @@ export function formatResponseList(responses: string[]) {
     return body;
 }
 
+/*
 export function getIssueResponses(issue: Issue) {
     const responses = Responses.map(r => r.response({issue})!).filter(r => r !== undefined);
     if (responses.length === 0) {
@@ -40,5 +41,6 @@ export function getIssueResponses(issue: Issue) {
     }
     return responses;
 }
+*/
 
 run();
